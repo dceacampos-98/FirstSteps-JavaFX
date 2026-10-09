@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="labfx.cl.bienvenidajavafx.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="385.0" prefWidth="548.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="labfx.cl.bienvenidajavafx.HelloController">
+   <children>
+      <ImageView fitHeight="393.0" fitWidth="555.0" layoutX="-2.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/fresh.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtHood" alignment="CENTER" layoutX="336.0" layoutY="230.0" prefHeight="26.0" prefWidth="159.0" promptText="WHERE YOU FROM?">
+         <font>
+            <Font name="Ink Free" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtSkill" alignment="CENTER" layoutX="336.0" layoutY="278.0" prefHeight="26.0" prefWidth="159.0" promptText="SO... CAN YOU SPIT?">
+         <font>
+            <Font name="Ink Free" size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnDown" layoutX="336.0" layoutY="328.0" mnemonicParsing="false" onAction="#stepUp" prefHeight="26.0" prefWidth="73.0" text="DOWN" />
+      <Button fx:id="btnWack" layoutX="421.0" layoutY="328.0" mnemonicParsing="false" onAction="#takeAWalk" prefHeight="26.0" prefWidth="73.0" text="WACK" />
+      <Label fx:id="lblResultado"
+             alignment="CENTER"
+             layoutX="230.0"
+             layoutY="2.0"
+             prefWidth="275.0"
+             prefHeight="100.0"
+             textAlignment="CENTER"
+             wrapText="true"
+             visible="false"
+             style="-fx-background-color: radial-gradient(center 50% 50%, radius 85%, #fbaf53 0%, #f0a245 70%, #e09235 100%); -fx-border-color: #000000; -fx-border-width: 2.5px; -fx-background-radius: 12px; -fx-border-radius: 12px; -fx-padding: 8px 12px; -fx-font-family: 'Comic Sans MS', 'Impact', sans-serif; -fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #000000; -fx-alignment: center;" />
+   </children>
+</AnchorPane>
